@@ -4,7 +4,10 @@
 * Ctrl + Shift + F
 
 ## README 작성할 때 (특히 문제 해설용) 사진으로 문제도 같이 첨부 해주기
-
+사진은 vscode에서 넣지 말고 github에 직접 넣기
+순서: 먼저 README 파일 작성 후 push를 한 다음 사진 파일 넣고 pull 하기
+이거 외에는 절대 깃허브에서 MD파일 수정 금지
+혼자쓰는 레포지토리가 아니라면 항상 pull 먼저하고 파일 수정하기
 
 ## README.MD 파일 미리보는 법
 * Ctrl+Shift+V 누르면 됨 이때 다른 MD파일,Preview README파일 열어둔거는 닫아 주고 다시 열어야 충돌이 안생김
