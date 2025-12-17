@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect</title>
+</head>
+<body>
+    <h1>폼 구성하기</h1>
+    <form action="" method="">
+        <fieldset>
+            <legend>로그인</legend>
+                <p>
+                    <label for="userid">아이디:<input type="text" id="userid"></label> <br> <!-- 명시적 방법 -->
+                    <label>비밀번호:<input type="password" placeholder="비밀번호" maxlength="8"></label> <br> <!--암묵적 방법 -->
+                </p>
+        </fieldset>
+        <br>
+        <textarea rows="10" cols="20" readonly></textarea> <br>
+        <input type="radio" name="lang" value="HTML" checked>HTML <br>
+        <input type="checkbox" name="lang" value="CSS">CSS <br>
+        <input type="file" name="upload_flie" accept="image/*"><br>
+        <select name="city" id="city">
+            <optgroup label="도시" size="2">
+                <option value="서울">서울</option>
+                <option value="수원" selected>수원</option>
+                <option value="인천" disabled>인천</option>
+                <option value="용인">용인</option>
+            </optgroup>
+        </select>
+        <br>
+        <button type="button">클릭</button>
+    </form>
+
+    <br>
+
+    <table>
+        <caption>성적표</caption>
+        <tr>
+            <th scope="col">구분</th>
+            <th scope="col">중간</th>
+            <th scope="col">기말</th>
+        </tr>
+        <tr>
+            <th scope="row">전공</th>
+            <td>A+</td>
+            <td>D-</td>
+        </tr>
+        <tr>
+            <th scope="row">교양</th>
+            <td>A+</td>
+            <td>B-</td>
+        </tr>
+    </table>
+
+    <br>
+    
+    <table border="1">
+        <caption>영수증</caption>
+        <col style="width: 60px">
+        <colgroup span="2" style="width: 100px"></colgroup>
+        <col style="width: 80px">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>총 금액</td>
+                <td colspan="3">11,000원</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>콜라</td>
+                <td>2</td>
+                <td>2,000원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>젤리</td>
+                <td>3</td>
+                <td rowspan="2">1,000원</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>과자</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    
+</body>
+</html>

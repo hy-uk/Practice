@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page!</title>
+</head>
+<body>
+    <h1>HTML CSS JS 연습하기</h1>
+
+    <h2>chapter. 텍스트 작성, 강조</h2>
+    
+    <p>나의 첫 번째 웹 페이지!</p>
+    
+    <p>줄 바꿀때는<br>이렇게</p>
+    
+    <q>과학은 관측되는 결과에 따라 끊임없이 변절해야하는 지조없는 맹세다</q>
+    <!--q태그는 인라인 요소가 아니라 끝나고 줄바꿈을 해줘야 함-->
+    <br>
+
+    <blockquote cite="https://steemit.com/krpen/@fgomul/4lksup">
+        <p>그녀는 최근 명상을 시작했다. 어떻게 살 것인가와 상관없이 그녀 내면의 묵은 숙제를 풀어야 할 것임을 어느 순간 직감했기 때문이다. 평온하길 바랐다. 마음이 고요할 수만 있다면 더 바랄 게 없을 것 같았다. 독을 풀고 분노를 보내고 화가 사라진 그 자리에는 결국 사랑의 결핍이 있다는 걸 발견한다. <ins>늘 알고 있었다.</ins>그녀는 한 번도 진정으로 <del>그녀 자신을 있는 그대로 사랑해 본 적이 없었고</del> 그 사실이 너무 싫어 그럴 수 없는 자신에게 더욱 가혹했다. 그래서 차라리 묻어두는 게 낫다고 생각했다. 외면하고 살다 보면 적어도 현상유지는 되겠지. 어두운 지하문에 아주 흐린 글씨로 <strong>‘자신을 <em>사랑하지</em> 않는 <strong>문제</strong>’</strong>란 성의 없는 팻말을 붙인 채 가둬 두었다.</p>
+    </blockquote>
+
+    <p>물의 분자식은 H<sub>2</sub>0입니다</p>
+
+    <p>x의 제곱 표현식은 x<sup>2</sup>입니다</p>
+    
+    <h2>그룹 짓기</h2>
+
+    <div class="영화">
+        <h3>영화 소개</h3>
+        <p>영화 <span>소개</span>하는 페이지</p>
+    </div>
+    <div class="TV">
+        <h3>TV 프로그램 소개</h3>
+        <p>TV 프로그램 <span>소개</span>하는 페이지</p>
+    </div>
+
+    <h2>목록 만들기</h2>
+    <ul>
+        <li>바나나</li>
+        <li>사과</li>
+        <li>배</li>
+    </ul>
+    <ol>
+        <li>바나나</li>
+        <li>사과</li>
+        <li>배</li>
+    </ol>
+    <dl>
+        <dt>바나나</dt>
+        <dd>바나나는 원래 하얗다</dd>
+    </dl>
+
+    <h2>링크와 이미지 넣기</h2>
+    <a href="https://www.naver.com" target="_blank" title="네이버">네이버</a><br>
+    <img src="https://play-lh.googleusercontent.com/jYtnK__ibJh9emODIgTyjZdbKym1iAj4RfoVhQZcfbG-DuTSHR5moHVx9CQnqg1yoco9" 
+    width="100" height="100" alt="네이버 이미지">
+    <br>
+    <a href="https://www.naver.com" target="_blank" title="사진 클릭시 네이버로 이동">
+        <img src="https://play-lh.googleusercontent.com/jYtnK__ibJh9emODIgTyjZdbKym1iAj4RfoVhQZcfbG-DuTSHR5moHVx9CQnqg1yoco9" 
+        width="100" height="100" alt="네이버 이미지">
+    </a>
+
+    <h2>멀티미디어 설정</h2>
+    <audio controls>
+        <source src="파일경로" type="미디어 타입">
+    </audio><br><br>
+    <video src="파일경로" width="500" height="500" controls></video>
+</body>
+</html>
