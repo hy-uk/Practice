@@ -1,0 +1,52 @@
+div.size {
+    font-size: 32px;
+}
+
+.size p{
+    font-size: 2rem; /* px / em / rem / % / vw / vh */
+    color: rgba(255,0,0,0.5); /* 키워드 - red / RGB - rgb(255,0,0) / rgba(255,0,0,0.5(투명도)), HEX - #ff0000 */
+} /* html 태그 기본 텍스트 크기: 16px */
+
+/* 텍스트 속성 */
+.font {
+    font-family: dotum, "바탕" , "Times New Roman", serif;
+    /* 적용 글꼴이 웹페이지 접속하는 사용자가 가지고 있는 글꼴이어야함
+    글꼴은 앞에서부터 순서대로 적용해보고 적용 안되면 뒤에 오늘 글꼴 적용
+    한글이나 띄어쓰기가 있는 글꼴은 따옴표 적용
+    따라서 실무에서는 마지막에 기본 글꼴을 걸어둠(pg.184)*/
+    
+    font-weight: 900; /* 굵기(100~900) / 숫자는 100단위 사용 
+    키워드 normal = 400 bold=700, lighter,bolder=부모 요소보다 얇음,굵음 */
+    
+    font-style: nor; /*italic: 이탤릭체 oblique:기울임 */
+    font-variant: small-caps; /* 소문자를 작은 대문자로 바꿔줌 */
+    text-align: center; 
+    /* left(start),right(end),justify(영문일 때 양끝맞춤) */
+    text-decoration: overline;
+} 
+
+a.link {
+    text-decoration: none; /* 텍스트 장식 지움 (a태그에서 유용)
+    line-through: 취소선, overline: 텍스트 위에 선, underline: 밑줄 */
+}
+
+.spacing {
+    letter-spacing: 2px; /* 자간 지정 / 기본 = 0px */
+    line-height: 1; /* 행간 설정 / 숫자: n*(현재 font-size값) , px, % */
+    /* 웹페이지 텍스트 구성 > pg.192 */
+}
+
+/* box model 
+1. margin >  바깥 여백 설정 - margin: <크기> > 4방향 다 적용 4개: top right bottom left 3개: top right bottom 2개: top&bottom right&left 
+                            margin-top[bottom][left][right]처럼 꼭 집어서도 가능
+2. border > 테두리 설정 - border: <border-width> <border-style> <color>; >> 따로따로 설정 가능, border-bottom[top][right][left]처럼 특정 방향에만도 가능(style도)
+                                                더 많은 style 값: pg.203
+3. padding > 
+4. content */
+.boxmodel {
+    margin: 30px;
+    border: 1px solid;
+    border-color: blue;
+    color: red;
+    border-radius: 8px;
+}

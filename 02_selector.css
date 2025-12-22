@@ -1,0 +1,135 @@
+
+/* 우선순위를 잘 생각하기!!
+1. !important
+2. 인라인 선택자
+3. id 선택자
+4. class 선택자
+5. 태그 선택자
+6. 전체 선택자
+7. 우선순위가 같을 때는 밑에 있는 코드 적용(Cascading Style Sheets: 폭포처럼 아래로 떨어지며 덮어씌움)*/
+
+/* 전체선택자 > 모든 요소 선택 */
+/* *{
+    color: green;
+} */
+
+
+/* 태그 선택자 > 특정 태그 선택 + 그룹화*/
+div > ul, div > ol {
+    color: blue;
+}
+
+
+/* 아이디 선택자 > 특정 아이디 선택 !! id 속성값은 고유해야함 */
+#unique {
+    color: aqua;
+}
+
+
+/* 클래스 선택자 > 특정 클래스 선택 !! id와 다르게 중복 가능 (가장 많이 사용) */
+.red {
+    color: red;
+}
+
+.brown {
+    color: brown;
+}
+
+/* 기본 속성 선택자 > 속성과 값 선택 (=""를 통해 특정시킬 수 있음)*/
+a[href="~"]{
+    color: chocolate;
+}
+
+/* 자식 선택자 > 부모태그 하위 자식태그에만 적용할 때 */
+div > h3 {
+    color: blueviolet;
+}
+
+/* 하위 선택자 > 부모태그 하위 모든 자식태그에 적용할 때 */
+.experiment h4{
+    color: bisque;
+}
+
+/* 인접 형제 선택자 > 앞에 선택자와 인접한 형제요소인 선택자만을 적용*/
+h2 + h3 {
+    color: salmon;
+}
+
+/* 문자열 속성 선택자는 중요하지 않아서 건너뜀 나중에 책 보기 pg.147 */
+
+/* 일반 형제 선택자 >  앞에 선택자 뒤에 오는 모든 형제요소 선택자 적용*/
+div > h2 ~ h3 {
+    color: salmon
+}
+
+/* 가상 요소 선택자 !!content란 after와 before 선택자와 가장 많이 쓰이는 속성 pg.154 더 많은 가상 선택자*/
+.virtual::after {
+    content: '<after>';
+}
+.virtual::before {
+    content: '<before> ';
+    color: darkcyan;
+}
+
+/* 링크 가상 클래스 선택자 */
+a:link { /* 한번도 방문한적 없는 링크 */
+    color: red;
+}
+
+a:visited {
+    color: chartreuse;
+}
+
+/* 동적 가상 클래스 선택자 */
+blockquote:hover { /* 마우스를 올리면 선택자로 지정 */
+    color: rosybrown;
+}
+
+p:active { /* 클릭 시 선택자로 지정 */
+    color: blue;
+}
+
+/* 입력 요소 가상 클래스 */
+input:focus { /* 입력 요소에 커서가 활성화되면 선택자로 지정 */
+    color: red;
+}
+
+input:checked + label {
+    color: red;
+}
+
+option:disabled {
+    background-color: red;
+    color: yellow;
+}
+
+button:enabled {
+    background-color: #ffcccf;
+    color: #000;
+}
+
+button {/* 이건 걍 버튼 크기 바꾸고 싶어서 */
+    padding: 10px 24px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* 구조적 가상 클래스 선택자 */
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: green;
+}
+
+.vc p:nth-child(1) {
+    color: red;
+}
+
+.vc p:nth-last-child(1) {
+    color: darkorchid;
+}

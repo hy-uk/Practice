@@ -10,3 +10,7 @@
 # weight = round(weight,2)
 # print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다.".format(height,gender,weight))
 
+
+a=1
+
+print(f'{a}')
